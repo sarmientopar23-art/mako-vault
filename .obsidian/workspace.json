@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "954c7fb10accbd46",
+    "type": "split",
+    "children": [
+      {
+        "id": "971e36a011d1ba50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "526d6a73aa7c7c90",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "45a88c6092e16f1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "a50a4af50019b399",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "434b144fdbc54b79",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "ab93ea11b753d247",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "b02e1943b9d96d28",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eb64374af5e2a1d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "31f837912371827b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ce47f072f9c7a65",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "5c4109cd0188cd6a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "104fbdf222a3f6f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "23b1f83b226f1133",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "419ab342be69314b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "526d6a73aa7c7c90",
+  "lastOpenFiles": [
+    "wiki/dashboard.md",
+    "wiki/referencias/neo-kim-13-conceptos.md",
+    "wiki/referencias/neo-kim-13-conceptos.md.tmp.11052.8c184c60ab17",
+    "wiki/referencias",
+    "wiki/sistema/reglas.md",
+    "wiki/sistema/pipeline.md",
+    "wiki/fuentes/comtrade.md",
+    "wiki/fuentes/serpapi.md",
+    "wiki/fuentes/apify.md",
+    "wiki/workflows/social.md",
+    "wiki/workflows/rss.md",
+    "wiki/workflows/mercadolibre.md",
+    "wiki/workflows/trends.md",
+    "wiki/sesiones/checkpoint-2026-06-27.md",
+    "wiki/sesiones/2026-06-27.md",
+    "wiki/sesiones/2026-06-27.md.tmp.11052.15d05e447a4a",
+    "wiki/workflows/diario.md",
+    "wiki/sistema/stack.md",
+    "wiki/decisiones/index.md",
+    "wiki/decisiones/index.md.tmp.11052.5cdff079d82a",
+    "wiki/errores/index.md",
+    "wiki/errores/index.md.tmp.11052.def9fb1d9498",
+    "CLAUDE.md",
+    "wiki/log.md",
+    "wiki/log.md.tmp.11052.74b8c5f6b0c0",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "CLAUDE.md.tmp.11052.5850c2c22224"
+  ]
+}
