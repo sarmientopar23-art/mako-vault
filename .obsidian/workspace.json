@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "971e36a011d1ba50",
+        "id": "9b584f10d7a5d07f",
         "type": "tabs",
         "children": [
           {
-            "id": "526d6a73aa7c7c90",
+            "id": "a36cab268a9c6ad0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "canvas",
+              "state": {
+                "file": "Sin título.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Sin título"
             }
           }
         ]
@@ -90,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Sin título.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de Sin título"
             }
           },
           {
@@ -108,11 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sin título.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de Sin título"
             }
           },
           {
@@ -150,12 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Sin título.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de Sin título"
             }
           }
         ]
@@ -177,12 +187,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "526d6a73aa7c7c90",
+  "active": "a36cab268a9c6ad0",
   "lastOpenFiles": [
+    "Sin título.canvas",
+    "CLAUDE.md",
+    "wiki/decisiones/index.md",
+    "wiki/referencias/neo-kim-13-conceptos.md",
     "workflows/proveedores.md",
     "workflows",
     "wiki/dashboard.md",
-    "wiki/referencias/neo-kim-13-conceptos.md",
     "wiki/referencias/neo-kim-13-conceptos.md.tmp.11052.8c184c60ab17",
     "wiki/referencias",
     "wiki/sistema/reglas.md",
@@ -199,11 +212,9 @@
     "wiki/sesiones/2026-06-27.md.tmp.11052.15d05e447a4a",
     "wiki/workflows/diario.md",
     "wiki/sistema/stack.md",
-    "wiki/decisiones/index.md",
     "wiki/decisiones/index.md.tmp.11052.5cdff079d82a",
     "wiki/errores/index.md",
     "wiki/errores/index.md.tmp.11052.def9fb1d9498",
-    "CLAUDE.md",
     "wiki/log.md",
     "wiki/log.md.tmp.11052.74b8c5f6b0c0",
     "wiki/index.md",
