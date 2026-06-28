@@ -11,17 +11,10 @@
             "id": "a36cab268a9c6ad0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Sin título.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Sin título"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -97,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "CLAUDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Sin título"
+              "title": "Enlaces entrantes de CLAUDE"
             }
           },
           {
@@ -116,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "CLAUDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Sin título"
+              "title": "Enlaces salientes de CLAUDE"
             }
           },
           {
@@ -159,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "CLAUDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Sin título"
+              "title": "Esquema de CLAUDE"
             }
           }
         ]
@@ -189,8 +182,9 @@
   },
   "active": "a36cab268a9c6ad0",
   "lastOpenFiles": [
-    "Sin título.canvas",
     "CLAUDE.md",
+    "wiki/index.md",
+    "Sin título.canvas",
     "wiki/decisiones/index.md",
     "wiki/referencias/neo-kim-13-conceptos.md",
     "workflows/proveedores.md",
@@ -217,7 +211,6 @@
     "wiki/errores/index.md.tmp.11052.def9fb1d9498",
     "wiki/log.md",
     "wiki/log.md.tmp.11052.74b8c5f6b0c0",
-    "wiki/index.md",
     "wiki/hot.md",
     "CLAUDE.md.tmp.11052.5850c2c22224"
   ]
