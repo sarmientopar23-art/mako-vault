@@ -45,6 +45,7 @@ RSS → Institucional → Trends → ML Productos → Reseñas ML → Social →
 - [[workflows/comtrade]] — Comtrade ONU
 - [[workflows/proveedores]] — Google Maps proveedores
 - [[workflows/diario]] — Motor Diario Gemini 2.5 Flash
+- [[workflows/diario-criterios]] — ⭐ Criterios de calidad del Diario (score 0–100)
 
 ### Conocimiento acumulado
 - [[errores/index]] — 30+ bugs resueltos y anti-patrones
@@ -52,6 +53,8 @@ RSS → Institucional → Trends → ML Productos → Reseñas ML → Social →
 - [[fuentes/apify]] — actores Apify y sus quirks
 - [[fuentes/serpapi]] — Google Trends y Maps
 - [[fuentes/comtrade]] — API pública ONU
+- [[referencias/neo-kim-13-conceptos]] — 13 conceptos AI engineering aplicados a MAKO
+- [[skills/index]] — inventario de 30+ skills disponibles
 
 ## Datos en Supabase (27/06/2026)
 - Señales totales: 5.654+
