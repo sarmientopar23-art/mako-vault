@@ -177,11 +177,13 @@
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "a36cab268a9c6ad0",
+  "active": "434b144fdbc54b79",
   "lastOpenFiles": [
+    "wiki/referencias/token-tricks.md",
     "outputs/lint-2026-06-28.md",
     "wiki/referencias/obsidian-plugins.md",
     "wiki/sources/karpathy-wiki-method-obsidian-claude-code.md",
@@ -217,7 +219,6 @@
     "wiki/sesiones/checkpoint-2026-06-27.md",
     "wiki/sesiones/2026-06-27.md",
     "wiki/sesiones/2026-06-27.md.tmp.11052.15d05e447a4a",
-    "wiki/workflows/diario.md",
     "wiki/decisiones/index.md.tmp.11052.5cdff079d82a"
   ]
 }
