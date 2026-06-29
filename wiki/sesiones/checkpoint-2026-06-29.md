@@ -1,11 +1,11 @@
 ﻿---
 type: checkpoint
 date: 2026-06-29
-time: 00:40
+time: 01:29
 trigger: pre-compact
 ---
 
-# Checkpoint 2026-06-29 00:40
+# Checkpoint 2026-06-29 01:29
 
 Contexto comprimido automaticamente por Claude Code.
 Revisar wiki/hot.md para el estado actual del sistema.
