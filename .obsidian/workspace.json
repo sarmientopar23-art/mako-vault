@@ -182,6 +182,8 @@
   },
   "active": "a36cab268a9c6ad0",
   "lastOpenFiles": [
+    "wiki/supabase/schema.md",
+    "wiki/supabase",
     "wiki/workflows/diario.md.tmp.13340.dbc21f87aec6",
     "Sin nombre",
     "wiki/workflows/diario-criterios.md",
@@ -215,7 +217,6 @@
     "wiki/errores/index.md.tmp.11052.def9fb1d9498",
     "wiki/log.md",
     "wiki/log.md.tmp.11052.74b8c5f6b0c0",
-    "wiki/hot.md",
-    "CLAUDE.md.tmp.11052.5850c2c22224"
+    "wiki/hot.md"
   ]
 }

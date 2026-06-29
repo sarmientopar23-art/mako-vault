@@ -1,37 +1,50 @@
 ---
 type: hot-cache
-updated: 2026-06-27
+updated: 2026-06-28
 ---
 
-# Contexto reciente — MAKO (27/06/2026)
+# Contexto reciente — MAKO (28/06/2026)
 
 ## Estado actual
-Sistema MAKO completo y operativo. 13 workflows activos en n8n. 5.654+ señales en Supabase. 8 Diarios generados.
+Sistema MAKO completo y operativo. 13 workflows activos en n8n. 5.654+ señales en Supabase. 9 Diarios generados.
+Motor Diario v2.0 actualizado con 3 bugs críticos corregidos (28/06).
 
-## Última sesión (27/06/2026)
-- Review Diario N°8 con Dario — auditoría 11 problemas detectados
-- Fix P11: filtro frescura TikTok/Instagram (descarta posts >60 días)
-- Motor Diario: R6 (precios en ARS), R7 (porcentajes enteros), R8 (no inventar métricas)
-- M9: calendario comercial AR 2026-2027 hardcodeado (9 fechas)
-- Comparación histórica M7/M8 implementada (cross-run por entity_id)
-- Inicio integración Claude Code + Obsidian (esta sesión)
+## Sesión 28/06/2026 — lo que cambió
+- **Bug fix run_id** (exec 550 falló): `HTTP Supabase ML History` pedía columna `run_id` que no existe → cambiado a `captured_at`; `Code Compare Historico` usa fecha como proxy de corrida
+- **Diario N°9** (exec 551): ✅ Grade A, Score 100, 4 HIGH + 2 MEDIUM, 3m26s, guardado en Supabase + OneDrive
+- **3 bugs corregidos en Motor Diario** (draft, NO publicado):
+  - B2: capital ahora validado de forma AGREGADA (acumula presupuesto, no individual por candidato)
+  - B3: `ralph_retry_count: currentRetry + 1` (antes no incrementaba → loop infinito potencial)
+  - B4: moduleCount < 15 → error explícito, Diario no se guarda
+- **Plan 8 etapas aprobado** por Dario para mejorar el sistema antes de corrida completa
+- **MAKO-VAULT** conectado vía MCP obsidian-vault → Claude puede leer/escribir el vault directamente
 
-## Pendiente urgente
-- **Ralph Loop**: Motor Diario draft listo — espera OK de Dario para publicar
-- **Bug D1**: Calidad Diario N°7 insatisfactoria — decidir arquitectura (1 llamada vs 3)
-- **Social TikTok+IG**: tuvo 0 resultados en última corrida — investigar
-- **n8n Starter $20/mes**: subir de 50 a 2500 ejecuciones
+## IMPORTANTE: Motor Diario en DRAFT
+Los 3 fixes están aplicados pero el workflow NO está publicado aún. Requiere OK de Dario antes de `publish_workflow`.
 
-## Workflows activos (IDs clave)
-- Trends: DC74ImsqVudt11xb ✅
-- ML Productos: OZ4J5d3ClU4uAC79 ✅
-- Motor Diario: gpAW2laIPCEj19FI ✅ (27 nodos, Gemini 2.5 Flash)
-- Control Panel: JtSONgOXo0C2XbRl ✅
+## Pendiente inmediato
+1. Dario da OK → publicar Motor Diario con fixes
+2. Etapa 2: ML Productos → TEST_MODE = false (nodo `Code Init`, workflow OZ4J5d3ClU4uAC79)
+3. Etapa 3: ML Reseñas → TEST_MODE = false (nodo `Code Init`, workflow UxJIOX85hYSnMGu1)
+4. Etapa 4: RSS feeds muertos → reemplazar iProfesional + Cronista
+5. Etapa 8 (ÚLTIMA): corrida completa
+
+## Workflows activos — IDs clave
+| Workflow | ID n8n | Estado |
+|----------|--------|--------|
+| Motor Diario v2.0 | gpAW2laIPCEj19FI | ⚠️ DRAFT (fixes pendientes de publicar) |
+| ML Productos v2.0 | OZ4J5d3ClU4uAC79 | TEST_MODE (9 señales) |
+| ML Reseñas v3 | UxJIOX85hYSnMGu1 | TEST_MODE (3 reseñas) |
+| Trends AR | DC74ImsqVudt11xb | ✅ Activo |
+| Social v2.0 | ZJLM7jq2FLjxp47J | ⚠️ 0 resultados en última corrida |
+| AliExpress | gR1DY5FhgtcP9yP6 | TEST_MODE |
+| RSS | kSfveBpckZ6APF57 | ⚠️ 3/5 feeds muertos |
+| Control Panel | JtSONgOXo0C2XbRl | ✅ Activo |
 
 ## Costos actuales
 - Apify: ~$6.50/corrida | Presupuesto jun 2026: ~$87 USD
 - n8n: 50 exec/mes | ~12 por corrida completa
 - IA: $0 (Gemini 2.5 Flash gratis)
 
-## Próximo paso recomendado
-Continuar con módulo 3 (TikTok/Instagram) o resolver Bug D1 del Motor Diario.
+## Columna que NO existe en signals
+`run_id` NO existe. Usar `captured_at` (fecha YYYY-MM-DD) como proxy de corrida.
