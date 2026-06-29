@@ -32,6 +32,7 @@ n8n timeout: 360000ms | responseFormat: "text"
 ## Bugs críticos
 - `countryCode`: SIEMPRE lowercase `"ar"` — con "AR" da error 400
 - timeout mínimo 300s — las búsquedas tardan ~88s
+- Actor puede tardar >180s por keyword ("mayorista cosmeticos belleza Argentina"): nodo HTTP tiene `onError: continueErrorOutput` → si un keyword falla, el loop sigue. Fix aplicado 29/06/2026.
 
 ## Output Supabase
 - `fuente`: `proveedores-google-maps`

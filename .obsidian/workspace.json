@@ -183,6 +183,15 @@
   },
   "active": "a36cab268a9c6ad0",
   "lastOpenFiles": [
+    "wiki/sesiones/2026-06-29.md",
+    "wiki/sesiones/2026-06-29.md.tmp.12364.fd42df781434",
+    "wiki/hot.md.tmp.12364.c15d39b39c89",
+    "wiki/estrategia/desktop.ini",
+    "wiki/estrategia/cobertura-ecommerce-ar.md",
+    "wiki/estrategia/cobertura-ecommerce-ar.md.tmp.12364.71d4bede0829",
+    "wiki/estrategia",
+    "wiki/workflows/proveedores.md.tmp.12364.d0dbe85553a6",
+    "wiki/workflows/embeddings.md.tmp.12364.3b18db21f5e7",
     "wiki/sesiones/checkpoint-2026-06-29.md",
     "wiki/referencias/token-tricks.md",
     "outputs/lint-2026-06-28.md",
@@ -194,8 +203,6 @@
     "wiki/workflows/parametros-criticos.md",
     "wiki/supabase/schema.md",
     "wiki/supabase",
-    "wiki/workflows/diario.md.tmp.13340.dbc21f87aec6",
-    "Sin nombre",
     "wiki/workflows/diario-criterios.md",
     "wiki/sesiones/checkpoint-2026-06-28.md",
     "CLAUDE.md",
@@ -204,10 +211,7 @@
     "wiki/decisiones/index.md",
     "wiki/referencias/neo-kim-13-conceptos.md",
     "workflows/proveedores.md",
-    "workflows",
     "wiki/dashboard.md",
-    "wiki/referencias/neo-kim-13-conceptos.md.tmp.11052.8c184c60ab17",
-    "wiki/referencias",
     "wiki/sistema/reglas.md",
     "wiki/sistema/pipeline.md",
     "wiki/fuentes/comtrade.md",
@@ -215,10 +219,6 @@
     "wiki/fuentes/apify.md",
     "wiki/workflows/social.md",
     "wiki/workflows/rss.md",
-    "wiki/workflows/mercadolibre.md",
-    "wiki/workflows/trends.md",
-    "wiki/sesiones/checkpoint-2026-06-27.md",
-    "wiki/sesiones/2026-06-27.md.tmp.11052.15d05e447a4a",
-    "wiki/decisiones/index.md.tmp.11052.5cdff079d82a"
+    "wiki/workflows/mercadolibre.md"
   ]
 }

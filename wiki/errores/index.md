@@ -63,6 +63,17 @@ confidence: high
 - Endpoint correcto: `/public/v1/preview` (sin API key)
 - No resuelve desde Windows — funciona solo desde n8n Cloud
 
+## OOM — Out of Memory en n8n Cloud (29/06/2026)
+| # | Error | Fix |
+|---|-------|-----|
+| O1 | ML Productos crash `Code Normalize Deals` | `maxResultsPerPage: 1000 → 100` en Deals Scraper |
+| O2 | Embeddings OOM + crash n8n Cloud | `limit=500 → 100` en GET Signals Pendientes |
+| O3 | n8n Cloud 503 completo | Esperar 2-3 min antes de reintentar. Corridas pesadas llenan RAM. |
+| O4 | Proveedores ECONNABORTED timeout | `onError: continueErrorOutput` en nodo HTTP para continuar el loop |
+| O5 | Clustering sin versión publicada post-503 | Republicar con `publish_workflow` antes de ejecutar |
+
+**Regla OOM:** Nunca `maxResultsPerPage > 100` en actores Apify. Nunca `limit > 100` en Embeddings.
+
 ## Anti-patrones — nunca hacer
 - ❌ `responseFormat: "json"` en UPSERTs a Supabase
 - ❌ `waitForFinish=300` para actores Apify pesados
@@ -71,3 +82,6 @@ confidence: high
 - ❌ Keywords en español en AliExpress
 - ❌ `updateNodeParameters` con código parcial
 - ❌ Pedir a Dario que corra sin diagnosticar primero
+- ❌ `maxResultsPerPage > 100` en actores Apify (OOM)
+- ❌ `limit > 100` en Embeddings GET Signals (vectores 1536-dim revientan RAM)
+- ❌ Relanzar Embeddings inmediatamente post-crash (esperar 2-3 min)

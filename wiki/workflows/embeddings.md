@@ -15,6 +15,11 @@ id: 7tFDSnx0tEGej8qe
 ## Qué hace
 Lee señales de la tabla `signals` que no tienen embedding → genera vectores 1536 dimensiones → los guarda en la columna `embedding` (tipo VECTOR(1536) de pgvector).
 
+## ⚠️ Límite crítico — NO cambiar
+`GET Signals Pendientes` usa `limit=100`. **NUNCA subir a más de 100.**
+Razón: Los vectores 1536-dim son muy pesados en RAM. Con `limit=500`, después de corridas pesadas (AliExpress 1.5h + Proveedores 30min), n8n Cloud STARTER se queda sin memoria → crash + n8n 503.
+Fix aplicado 29/06/2026 (activeVersionId: 0412262e). Ver [[errores/index#OOM]].
+
 ## Tecnología
 - **Modelo**: `text-embedding-3-small` (OpenAI)
 - **Columna destino**: `signals.embedding` (pgvector)
