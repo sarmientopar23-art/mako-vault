@@ -1,0 +1,4 @@
+# Archivos que Claude Code NO debe leer en este vault
+.obsidian/
+.git/
+outputs/
