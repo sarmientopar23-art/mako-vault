@@ -56,7 +56,11 @@ RSS → Institucional → Trends → ML Productos → Reseñas ML → Social →
 - [[referencias/neo-kim-13-conceptos]] — 13 conceptos AI engineering aplicados a MAKO
 - [[skills/index]] — inventario de 30+ skills disponibles
 
-## Datos en Supabase (27/06/2026)
+### Base de datos
+- [[supabase/schema]] — ⭐ Schema completo: tablas, columnas, queries frecuentes (columnas que NO existen)
+- [[workflows/parametros-criticos]] — ⭐ Referencia rápida nodo+parámetro por workflow (evita leer JSONs completos)
+
+## Datos en Supabase (28/06/2026)
 - Señales totales: 5.654+
 - Diarios generados: 8
 - Fuentes activas: 18+
