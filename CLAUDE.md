@@ -23,12 +23,31 @@ Guarda la sesión actual:
 2. Actualiza `wiki/hot.md` con el resumen más reciente (máx 500 palabras)
 3. Agrega entrada a `wiki/log.md`
 
-### lint the wiki
-Verifica:
+### /ingest [archivo o URL]
+Ingesta una fuente externa al vault:
+1. Leer el archivo en `raw/` (o clipear desde URL a `raw/referencias/`)
+2. Crear resumen en `wiki/sources/nombre-kebab-case.md` con frontmatter completo
+3. Leer `wiki/index.md` e identificar notas wiki/ existentes relacionadas
+4. Actualizar hasta 3 notas wiki/ afectadas (agregar sección, actualizar datos, agregar wikilink)
+5. Agregar entrada en `wiki/log.md` listando qué cambió
+6. Si la fuente introduce conceptos nuevos → crear nota en `wiki/referencias/`
+Máximo 3 fuentes por sesión para mantener calidad de conexiones.
+
+### /lint
+Audita la salud del vault y guarda resultado en `outputs/lint-YYYY-MM-DD.md`:
 - Notas sin wikilinks entrantes (huérfanas)
-- Decisiones contradictorias
-- Workflows con estado desactualizado
-- Guarda resultado en `outputs/lint-YYYY-MM-DD.md`
+- Decisiones contradictorias entre notas
+- Workflows con estado desactualizado vs index.md
+- Notas con `confidence: low` sin actualización en 30+ días
+- Campos frontmatter faltantes (sources, created, updated, type)
+- Wikilinks rotos (referencias a notas que no existen)
+Ejecutar semanalmente o después de sesiones grandes.
+
+### /new [tipo] [nombre]
+Crea una nota nueva con frontmatter completo usando el template:
+- Tipo: concept | workflow | decision | error | source | reference
+- Usa `templates/nota-base.md` como base
+- Guarda en la subcarpeta correcta según el tipo
 
 ## Estructura del vault
 ```
@@ -38,22 +57,52 @@ MAKO-VAULT/
 │   ├── index.md           ← catálogo maestro
 │   ├── hot.md             ← contexto reciente (500 palabras)
 │   ├── log.md             ← registro append-only
-│   ├── sistema/           ← arquitectura MAKO
+│   ├── sistema/           ← arquitectura MAKO (pipeline, stack, reglas)
 │   ├── workflows/         ← estado de cada workflow n8n
-│   ├── errores/           ← bugs y lecciones
+│   ├── sources/           ← resúmenes de fuentes externas ingestadas
+│   ├── errores/           ← bugs resueltos y lecciones
 │   ├── decisiones/        ← decisiones tomadas (no re-discutir)
 │   ├── fuentes/           ← análisis de fuentes de datos
+│   ├── referencias/       ← conceptos técnicos y externos
+│   ├── skills/            ← inventario de skills disponibles
 │   └── sesiones/          ← log de cada sesión de trabajo
-├── raw/docs-mako/         ← artefactos MAKO (inmutables)
-└── outputs/               ← reportes y lint
+├── raw/
+│   ├── docs-mako/         ← artefactos MAKO (inmutables)
+│   └── referencias/       ← artículos y docs externos cliqueados
+├── templates/
+│   └── nota-base.md       ← template para notas nuevas
+└── outputs/               ← reportes lint y auditorías
 ```
 
-## Convenciones
-- Frontmatter YAML en cada nota: `type`, `updated`, `confidence`, `related`
-- Wikilinks `[[nombre]]` para cross-referencias entre notas
+## Convenciones de frontmatter YAML
+Cada nota DEBE tener este frontmatter completo:
+```yaml
+---
+title: Título descriptivo
+type: concept | workflow | decision | error | source | reference | index | log | hot-cache | sistema | checkpoint
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+confidence: high | medium | low
+sources:
+  - raw/ruta/al/archivo-fuente.md
+related:
+  - "[[ruta/nota-relacionada]]"
+tags: []
+---
+```
+- `confidence: high` = verificado en ejecución real
+- `confidence: medium` = diseñado, no probado
+- `confidence: low` = hipótesis o dato sin verificar
+- `sources` vacío `[]` si la nota es generada internamente (no viene de un raw/)
+- Nombres de archivo: kebab-case siempre
+
+## Reglas de escritura
+- Wikilinks `[[nombre]]` para TODA referencia a otra nota del vault
 - `wiki/log.md`: append-only — nunca modificar entradas anteriores
 - `wiki/hot.md`: sobrescribir en cada sesión (máx 500 palabras)
-- Confianza: `high` = verificado en ejecución real | `medium` = diseñado, no probado | `low` = hipótesis
+- `wiki/sources/`: una nota por fuente externa, nunca agrupar varias
+- `raw/`: inmutable — nunca modificar archivos en raw/, solo leer
+- Después de cualquier cambio masivo → correr `/lint`
 
 ## Reglas MAKO — NO negociables
 1. n8n es orquestador — nunca almacena ni calcula similitud

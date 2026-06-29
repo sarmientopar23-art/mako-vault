@@ -182,6 +182,10 @@
   },
   "active": "a36cab268a9c6ad0",
   "lastOpenFiles": [
+    "wiki/sources/karpathy-wiki-method-obsidian-claude-code.md",
+    "wiki/sources",
+    "templates/nota-base.md",
+    "templates",
     "wiki/workflows/parametros-criticos.md",
     "wiki/supabase/schema.md",
     "wiki/supabase",
@@ -214,10 +218,6 @@
     "wiki/workflows/diario.md",
     "wiki/sistema/stack.md",
     "wiki/decisiones/index.md.tmp.11052.5cdff079d82a",
-    "wiki/errores/index.md",
-    "wiki/errores/index.md.tmp.11052.def9fb1d9498",
-    "wiki/log.md",
-    "wiki/log.md.tmp.11052.74b8c5f6b0c0",
-    "wiki/hot.md"
+    "wiki/errores/index.md"
   ]
 }

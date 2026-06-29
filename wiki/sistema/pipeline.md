@@ -35,9 +35,9 @@ INPUT → SIGNALS → CLUSTERS → OPPORTUNITIES → DIARIO ESTRATÉGICO
 - **pgvector para similitud**: threshold 0.82, mínimo 5 signals, 2 fuentes distintas
 
 ## Fuentes de datos
-- [[serpapi]] — Trends (gratis)
-- [[apify]] — ML, Reviews, Social, AliExpress, Proveedores
-- [[comtrade]] — Importaciones AR←China (gratis)
+- [[fuentes/serpapi]] — Trends (gratis)
+- [[fuentes/apify]] — ML, Reviews, Social, AliExpress, Proveedores
+- [[fuentes/comtrade]] — Importaciones AR←China (gratis)
 - RSS — feeds económicos AR
 - APIs públicas CACE/CAME
 

@@ -14,9 +14,9 @@ updated: 2026-06-27
 
 | Actor | ID | Costo | Workflow |
 |-------|-----|-------|---------|
-| MercadoLibre ES | `karamelo~mercadolibre-scraper-espanol-castellano` | ~$0.096/run | [[mercadolibre]] |
+| MercadoLibre ES | `karamelo~mercadolibre-scraper-espanol-castellano` | ~$0.096/run | [[workflows/mercadolibre]] |
 | ML Reviews | `saswave~mercadolibre-reviews-scraper` | $0.0006/reseña | ML Reseñas v3 |
-| TikTok | `clockworks~tiktok-scraper` | ~$0.40/run | [[social]] |
+| TikTok | `clockworks~tiktok-scraper` | ~$0.40/run | [[workflows/social]] |
 | Instagram | `apify~instagram-hashtag-scraper` | ~$0.10/run | [[social]] |
 | AliExpress | `piotrv1001~aliexpress-listings-scraper` | ~$0.60/50kw | AliExpress |
 | Google Places | `compass~crawler-google-places` | $0.002/place | Proveedores |

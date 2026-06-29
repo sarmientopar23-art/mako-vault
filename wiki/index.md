@@ -54,7 +54,14 @@ RSS → Institucional → Trends → ML Productos → Reseñas ML → Social →
 - [[fuentes/serpapi]] — Google Trends y Maps
 - [[fuentes/comtrade]] — API pública ONU
 - [[referencias/neo-kim-13-conceptos]] — 13 conceptos AI engineering aplicados a MAKO
+- [[referencias/obsidian-plugins]] — guía de instalación plugins + queries Dataview
 - [[skills/index]] — inventario de 30+ skills disponibles
+
+### Sources ingestadas (método Karpathy)
+- [[sources/karpathy-wiki-method-obsidian-claude-code]] — Método Wiki Karpathy: ingest/query/lint con Claude Code + Obsidian
+
+### Templates
+- `templates/nota-base.md` — template con frontmatter completo para notas nuevas
 
 ### Base de datos
 - [[supabase/schema]] — ⭐ Schema completo: tablas, columnas, queries frecuentes (columnas que NO existen)
