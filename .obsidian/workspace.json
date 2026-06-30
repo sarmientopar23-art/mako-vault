@@ -183,6 +183,8 @@
   },
   "active": "a36cab268a9c6ad0",
   "lastOpenFiles": [
+    "wiki/estrategia/replanteo-stack-2026-06-29.md",
+    "wiki/estrategia/replanteo-stack-2026-06-29.md.tmp.9704.b6507d49493c",
     "wiki/sesiones/2026-06-29.md",
     "wiki/sesiones/2026-06-29.md.tmp.12364.fd42df781434",
     "wiki/hot.md.tmp.12364.c15d39b39c89",
@@ -202,7 +204,6 @@
     "templates",
     "wiki/workflows/parametros-criticos.md",
     "wiki/supabase/schema.md",
-    "wiki/supabase",
     "wiki/workflows/diario-criterios.md",
     "wiki/sesiones/checkpoint-2026-06-28.md",
     "CLAUDE.md",
@@ -218,7 +219,6 @@
     "wiki/fuentes/serpapi.md",
     "wiki/fuentes/apify.md",
     "wiki/workflows/social.md",
-    "wiki/workflows/rss.md",
-    "wiki/workflows/mercadolibre.md"
+    "wiki/workflows/rss.md"
   ]
 }
